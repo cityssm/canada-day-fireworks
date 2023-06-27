@@ -4,6 +4,8 @@
 
 A fireworks show for our Canada Day door competition!
 
+**[Watch the Show](https://cityssm.github.io/canada-day-fireworks/)**
+
 ## Credits
 
 Photo courtesy of the
