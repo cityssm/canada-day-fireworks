@@ -1,10 +1,25 @@
-<html style="height:100vh;margin:0;padding:0;background:red">
-  <body style="margin:0;padding-top:30vh;font-size:30vh;font-weight:bold">
-    <marquee scrollamount="20" scrolldelay="60" style="color:white">
+<html style="height: 100vh; margin: 0; padding: 0; background: red">
+  <head>
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#ff0000" />
+  </head>
+  <body
+    style="margin: 0; padding-top: 30vh; font-size: 30vh; font-weight: bold"
+  >
+    <marquee
+      scrollamount="20"
+      scrolldelay="60"
+      style="color: white; font-family: Arial, Helvetica, sans-serif"
+    >
       Happy Canada Day!
     </marquee>
     <script>
-      (function(){document.querySelector("body").requestFullscreen();})();
+      let wakeLock = null;
+      try {
+        navigator.wakeLock.request("screen");
+      } catch (err) {
+        // console.log(err)
+      }
     </script>
   </body>
 </html>
